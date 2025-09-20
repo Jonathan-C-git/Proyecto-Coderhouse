@@ -1,0 +1,27 @@
+/*background*/
+body {
+  min-height: 100vh;
+  background: linear-gradient( #6a00f4, #ff007c);
+  background-size: cover;
+
+}
+
+h1 {
+    font-family: "Archivo Black", sans-serif;
+    color: rgb(226, 43, 195);
+}
+
+/*seleccion en el li*/
+li {
+    font-family: "Libertinus Serif Display", system-ui;
+}
+li:hover {
+    font-style: oblique;
+}
+.liActivado {
+    color: white;
+    font-family: "Archivo Black", sans-serif;
+}
+.text-color {
+    color: white;
+}
