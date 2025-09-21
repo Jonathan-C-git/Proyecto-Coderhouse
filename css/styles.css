@@ -15,16 +15,13 @@ h1 {
 li {
     font-family: "Libertinus Serif Display", system-ui;
 }
-
 li:hover {
     font-style: oblique;
 }
-
 .liActivado {
     color: white;
     font-family: "Archivo Black", sans-serif;
 }
-
 .text-color {
     color: white;
 }
@@ -34,7 +31,6 @@ li:hover {
     text-align: center;
     padding: 20px 0px 20px 0px;
 }
-
 .titlePage h2 {
     font-family: "Libertinus Serif Display", system-ui;
     font-size: 50px;
@@ -62,7 +58,8 @@ section {
 .containerGaleriaGrid img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* mantiene la proporcion y rellena el espacio */
+    object-fit: cover;
+    /* mantiene la proporcion y rellena el espacio */
     object-position: center;
     border-radius: 8px;
 }
@@ -70,39 +67,76 @@ section {
 .galeria1 {
     grid-area: g1;
 }
+
 .galeria2 {
     grid-area: g2;
 }
+
 .galeria3 {
     grid-area: g3;
 }
+
 .galeria4 {
     grid-area: g4;
 }
+
 .galeria5 {
     grid-area: g5;
 }
+
 .galeria6 {
     grid-area: g6;
 }
+
 .galeria7 {
     grid-area: g7;
 }
+
 .galeria8 {
     grid-area: g8;
 }
+
 .galeria9 {
     grid-area: g9;
 }
+
 .galeria10 {
     grid-area: g10;
 }
 
+/*preguntas frecuentes personalizado*/
+.accordion-p-f{
+    font-family: "Libertinus Serif Display", system-ui;
+    background: linear-gradient(#834ac5, #6a00f4);
+    margin: 15px 10px 15px 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+.accordion-p-f h2 {
+    color: dimgrey;
+    font-size: medium;
+}
+.respuesta-p-f {
+    margin: 5px;
+    color: aliceblue;
+}
+
 /*galeria con media query*/
 @media (max-width:768px) {
-    section{
+
+    /*Titulo en las paginas*/
+    .titlePage {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .titlePage h2 {
+        font-size: 30px;
+    }
+
+    section {
         margin: 5px;
     }
+
     .containerGaleriaGrid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -131,5 +165,3 @@ section {
     display: flex;
     flex-direction: column;
 }
-
-/*footer con query media*/
