@@ -12,19 +12,29 @@ h1 {
     color: rgb(226, 43, 195);
 }
 
+h3 {
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-inline-start: 2rem;
+}
+
 /*seleccion en el li del encabezado*/
 li {
     font-family: "Libertinus Serif Display", system-ui;
 }
+
 .nav-item a:hover {
     font-style: oblique;
     color: rgb(226, 43, 195);
     font-size: 18px;
 }
+
 .liActivado {
     color: white;
     font-family: "Archivo Black", sans-serif;
 }
+
 .text-color {
     color: white;
 }
@@ -34,6 +44,7 @@ li {
     text-align: center;
     padding: 20px 0px 20px 0px;
 }
+
 .titlePage h2 {
     font-family: "Libertinus Serif Display", system-ui;
     font-size: 50px;
@@ -44,6 +55,7 @@ li {
 section {
     margin: 20px;
 }
+
 .containerGaleriaGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -56,6 +68,7 @@ section {
         "g4 g6 g7 g7"
         "g8 g6 g9 g10";
 }
+
 .containerGaleriaGrid img {
     width: 100%;
     height: 100%;
@@ -186,8 +199,48 @@ footer {
     font-size: 1.1rem;
 }
 
+/*button card*/
+.btn-carrito {
+    background-color: #6a00f4;
+    border-color: #6a00f4;
+    width: 80%;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.btn-carrito:hover {
+    background-color: rgb(226, 43, 195);
+    border-color: rgb(226, 43, 195);
+    color: aliceblue;
+}
+
+/*cards corousel*/
+.card-flex {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /*espacio medio*/
+}
+.card {
+    background: linear-gradient(#6a00f4, #ff007c);
+    width: 18rem;
+}
+
+/*text carousel*/
+.card-title {
+    color: aliceblue;
+    font-weight: bold;
+}
+.card-text {
+    color: aliceblue;
+}
+
 /*galeria con media query*/
 @media (max-width:768px) {
+
+    h3 {
+        font-size: 24px;
+    }
 
     /*Titulo en las paginas*/
     .titlePage {
@@ -218,6 +271,12 @@ footer {
             "g5 g6"
             "g7 g6"
             "g7 g10";
+    }
+
+    /*card en el carousel*/
+    .card-flex {
+        flex-direction: column;
+        align-items: center;
     }
 
     /*footer*/
