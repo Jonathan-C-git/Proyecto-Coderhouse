@@ -7,9 +7,13 @@ body {
 
 }
 
+header {
+    background: linear-gradient(#6a00f4, #ff007c);
+}
+
 h1 {
     font-family: "Archivo Black", sans-serif;
-    color: rgb(226, 43, 195);
+    color: rgb(72, 2, 129);
 }
 
 h3 {
@@ -26,7 +30,7 @@ li {
 
 .nav-item a:hover {
     font-style: oblique;
-    color: rgb(226, 43, 195);
+    color: rgb(72, 2, 129);
     font-size: 18px;
 }
 
@@ -193,7 +197,7 @@ footer {
 }
 
 .preguntas-termino a:hover {
-    color: rgb(226, 43, 195);
+    color: rgb(72, 2, 129);
     /*selector*/
     font-weight: bold;
     font-size: 1.1rem;
