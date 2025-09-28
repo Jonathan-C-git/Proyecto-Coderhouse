@@ -218,6 +218,19 @@ footer {
     color: aliceblue;
 }
 
+/*button carousel*/
+.carousel-control-prev-icon {
+    background-color: #834ac5;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.carousel-control-next-icon {
+    background-color: #834ac5;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 /*cards corousel*/
 .card-flex {
     display: flex;
@@ -225,6 +238,7 @@ footer {
     gap: 1rem;
     /*espacio medio*/
 }
+
 .card {
     background: linear-gradient(#6a00f4, #ff007c);
     width: 18rem;
@@ -235,8 +249,67 @@ footer {
     color: aliceblue;
     font-weight: bold;
 }
+
 .card-text {
     color: aliceblue;
+}
+
+/*carousel inicio principal*/
+.carousel-caption p {
+    color: aliceblue;
+}
+
+.carousel {
+    margin: 1rem 10% 1rem 10%;
+}
+
+.img-banner {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*page inicio*/
+.titles-inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.ver-mas {
+    padding-inline-end: 2rem;
+    color: aliceblue;
+    font-size: 1.1rem;
+}
+
+.ver-mas:hover {
+    color: rgb(72, 2, 129);
+    font-weight: bold;
+}
+
+.margin-card {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.title-principal {
+    font-family: fantasy;
+    font-size: 2rem;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.container h3 {
+    text-align: center;
+    padding: 1rem;
+}
+.descripcion-ubicacion {
+    color: aliceblue;
+    font-family: "Libertinus Serif Display", system-ui;
+    text-align: center;
 }
 
 /*galeria con media query*/
@@ -283,6 +356,13 @@ footer {
         align-items: center;
     }
 
+    .img-banner {
+        border-radius: 0;
+    }
+
+    .carousel {
+        margin: 1rem 0 1rem 0;
+    }
     /*footer*/
     footer {
         display: flex;
