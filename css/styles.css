@@ -278,6 +278,7 @@ footer {
     align-items: center;
     text-align: center;
 }
+
 .ver-mas {
     padding-inline-end: 2rem;
     color: aliceblue;
@@ -306,10 +307,54 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+.container div {
+    align-items: center;
+}
+
 .descripcion-ubicacion {
     color: aliceblue;
     font-family: "Libertinus Serif Display", system-ui;
     text-align: center;
+}
+
+/*page contacto*/
+.formulario-contacto {
+    justify-items: center;
+}
+
+.formulario-contacto div {
+    width: 80%;
+}
+
+.button-contacto {
+    background-color: #834ac5;
+    color: aliceblue;
+    border-radius: 1rem;
+    width: 20%;
+    min-height: 40px;
+    border-color: #ff007c;
+}
+
+.button-contacto:hover {
+    background-color: #946ebe;
+}
+
+.redes-social i {
+    font-size: 1.5rem;
+}
+
+.redes-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    margin: 2rem;
+}
+
+.container-redes {
+    text-align: center;
+    margin: 4rem;
 }
 
 /*galeria con media query*/
@@ -363,6 +408,20 @@ footer {
     .carousel {
         margin: 1rem 0 1rem 0;
     }
+
+    /*formulario contacto*/
+    .formulario-contacto div {
+        width: 90%;
+    }
+
+    .button-contacto {
+        width: 25%;
+    }
+
+    .redes-social i {
+        font-size: 1rem;
+    }
+
     /*footer*/
     footer {
         display: flex;
