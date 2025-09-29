@@ -357,7 +357,18 @@ footer {
     margin: 4rem;
 }
 
-/*galeria con media query*/
+/*page terminos y condiciones*/
+.container-terminos-condicion {
+    max-width: 80%;
+    margin: 1rem;
+    padding: 20px;
+    color: aliceblue;
+}
+.container-terminos-condicion li {
+    margin-top: 1rem;
+}
+
+/*media query*/
 @media (max-width:768px) {
 
     h3 {
@@ -420,6 +431,10 @@ footer {
 
     .redes-social i {
         font-size: 1rem;
+    }
+
+    .container-terminos-condicion {
+        max-width: 90%;
     }
 
     /*footer*/
