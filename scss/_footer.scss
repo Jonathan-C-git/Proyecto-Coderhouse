@@ -1,0 +1,50 @@
+/*footer con implementacion flex*/
+footer {
+    @include flex-center(flex, row, space-evenly, center);
+    width: 100%;
+    background: $color-footer;
+    padding: 20px;
+
+    .patrocinadores {
+        @include flex-center(flex, column, space-between, center);
+        justify-items: center;
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+            color: $color-white-claro;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        ul {
+            list-style: none;
+            @include flex-activador(flex, row);
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin: 0;
+            align-content: center;
+        }
+
+        img {
+            width: 100px;
+            object-fit: cover;
+            margin: 10px;
+        }
+    }
+
+    .preguntas-termino {
+        @include flex-activador(flex, column);
+
+        a {
+            @include color($color-white-claro);
+        }
+
+        a:hover {
+            @include color($color-text-title);
+        }
+    }
+}

@@ -1,3 +1,376 @@
+/*background general*/
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #6a00f4, #4c045a);
+}
 
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  color: rgb(72, 2, 129);
+}
+
+h3 {
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-inline-start: 2rem;
+}
+
+li {
+  font-family: "Libertinus Serif Display", system-ui;
+}
+
+/*Titulo en las paginas*/
+.titlePage {
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+}
+.titlePage h2 {
+  font-family: "Libertinus Serif Display", system-ui;
+  color: white;
+  font-size: 50px;
+}
+
+section {
+  margin: 20px;
+}
+
+header {
+  background-image: radial-gradient(circle, #6a00f4, #ff007c);
+}
+header .nav-item a:hover {
+  font-style: oblique;
+  color: rgb(72, 2, 129);
+  font-size: 18px;
+}
+header .liActivado {
+  font-family: "Archivo Black", sans-serif;
+  color: white;
+}
+header .text-color {
+  color: white;
+}
+
+/*footer con implementacion flex*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(#6a00f4, #834ac5);
+  padding: 20px;
+}
+footer .patrocinadores {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+footer .patrocinadores p {
+  text-align: center;
+  margin-top: 10px;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+footer .patrocinadores ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+footer .patrocinadores ul li {
+  margin: 0;
+  align-content: center;
+}
+footer .patrocinadores img {
+  width: 100px;
+  object-fit: cover;
+  margin: 10px;
+}
+footer .preguntas-termino {
+  display: flex;
+  flex-direction: column;
+}
+footer .preguntas-termino a {
+  color: aliceblue;
+}
+footer .preguntas-termino a:hover {
+  color: rgb(72, 2, 129);
+}
+
+/*cards de carousel general*/
+.card-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+.card-flex .card {
+  background: radial-gradient(circle, #6a00f4, #ff007c);
+  width: 18rem;
+}
+.card-flex .card .card-title {
+  font-weight: bold;
+}
+.card-flex .card .card-text, .card-flex .card .btn-carrito:hover, .card-flex .card .btn-carrito, .card-flex .card .card-title {
+  color: aliceblue;
+}
+.card-flex .card .btn-carrito {
+  background-color: #6a00f4;
+  border-color: #6a00f4;
+  width: 80%;
+  font-weight: bold;
+}
+.card-flex .card .btn-carrito:hover {
+  background-color: rgb(226, 43, 195);
+  border-color: rgb(226, 43, 195);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #834ac5;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/*carousel pages inicio principal*/
+.carousel {
+  margin: 1rem 10% 1rem 10%;
+}
+.carousel .img-banner {
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.carousel p {
+  color: aliceblue;
+}
+
+/*Titulo principal con animation*/
+.title-principal {
+  font-family: fantasy;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/*section*/
+.margin-card {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+/*section de ubicacion*/
+.container h3 {
+  text-align: center;
+  padding: 1rem;
+}
+.container div {
+  align-items: center;
+}
+.container .descripcion-ubicacion {
+  font-family: "Libertinus Serif Display", system-ui;
+  color: aliceblue;
+  text-align: center;
+}
+
+/*productos destacados title*/
+.titles-inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.titles-inicio .ver-mas {
+  padding-inline-end: 2rem;
+  color: aliceblue;
+  font-size: 1.1rem;
+}
+.titles-inicio .ver-mas:hover {
+  color: rgb(226, 43, 195);
+  font-weight: bold;
+}
+
+.containerGaleriaGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  gap: 10px;
+  width: 100%;
+  grid-template-areas: "g1 g1 g2 g3" "g4 g5 g5 g3" "g4 g6 g7 g7" "g8 g6 g9 g10";
+}
+
+.containerGaleriaGrid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* mantiene la proporcion y rellena el espacio */
+  object-position: center;
+  border-radius: 8px;
+}
+
+.galeria1 {
+  grid-area: g1;
+}
+
+.galeria2 {
+  grid-area: g2;
+}
+
+.galeria3 {
+  grid-area: g3;
+}
+
+.galeria4 {
+  grid-area: g4;
+}
+
+.galeria5 {
+  grid-area: g5;
+}
+
+.galeria6 {
+  grid-area: g6;
+}
+
+.galeria7 {
+  grid-area: g7;
+}
+
+.galeria8 {
+  grid-area: g8;
+}
+
+.galeria9 {
+  grid-area: g9;
+}
+
+.galeria10 {
+  grid-area: g10;
+}
+
+.container-redes {
+  text-align: center;
+  margin: 4rem;
+}
+.container-redes .redes-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 2rem;
+}
+.container-redes .redes-social i {
+  font-size: 1.5rem;
+}
+
+.formulario-contacto {
+  justify-items: center;
+}
+.formulario-contacto div {
+  width: 80%;
+}
+.formulario-contacto .button-contacto {
+  background-color: #834ac5;
+  color: aliceblue;
+  border-radius: 1rem;
+  width: 20%;
+  min-height: 40px;
+  border-color: #ff007c;
+}
+.formulario-contacto .button-contacto:hover {
+  background-color: #946ebe;
+}
+
+/*preguntas frecuentes*/
+.accordion-p-f {
+  font-family: "Libertinus Serif Display", system-ui;
+  background: linear-gradient(#834ac5, #6a00f4);
+  margin: 15px 10px 15px 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+.accordion-p-f h2 {
+  color: dimgrey;
+  font-size: medium;
+}
+.accordion-p-f .respuesta-p-f {
+  margin: 5px;
+  color: aliceblue;
+}
+
+/*terminos y condiciones*/
+.container-terminos-condicion {
+  max-width: 80%;
+  margin: 1rem;
+  padding: 20px;
+  color: aliceblue;
+}
+.container-terminos-condicion li {
+  margin-top: 1rem;
+}
+
+/*media query*/
+@media (max-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
+  /*Titulo en las paginas*/
+  .titlePage {
+    padding: 10px 0px 10px 0px;
+  }
+  .titlePage h2 {
+    font-size: 30px;
+  }
+  section {
+    margin: 5px;
+  }
+  .containerGaleriaGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 200px);
+    gap: 5px;
+    width: 100%;
+    height: auto;
+    grid-template-areas: "g1 g2" "g1 g3" "g8 g3" "g4 g4" "g5 g9" "g5 g6" "g7 g6" "g7 g10";
+  }
+  /*card en el carousel*/
+  .card-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel {
+    margin: 1rem 0 1rem 0;
+  }
+  .carousel .img-banner {
+    border-radius: 0;
+  }
+  /*formulario contacto*/
+  .formulario-contacto div {
+    width: 90%;
+  }
+  .button-contacto {
+    width: 25%;
+  }
+  .redes-social i {
+    font-size: 1rem;
+  }
+  .container-terminos-condicion {
+    max-width: 90%;
+  }
+  /*footer*/
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

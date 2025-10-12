@@ -1,0 +1,17 @@
+header {
+    background-image: $color-primary-2;
+
+    .nav-item a:hover {
+        font-style: oblique;
+        @include color($color-text-title);
+        font-size: 18px;
+    }
+
+    .liActivado {
+        @include font($font-principal, $color-white);
+    }
+
+    .text-color {
+        @include color($color-white);
+    }
+}

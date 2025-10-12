@@ -1,0 +1,62 @@
+/*cards de carousel general*/
+.card-flex {
+    @include flex-activador(flex, row);
+    justify-content: center;
+    gap: 1rem;
+
+    .card {
+        background: $color-primary-2;
+        width: 18rem;
+
+        .card-title {
+            @extend .card-text;
+            font-weight: bold;
+        }
+
+        .card-text {
+            @include color($color-white-claro);
+        }
+
+        .btn-carrito {
+            background-color: $color-violeta;
+            border-color: $color-violeta;
+            width: 80%;
+            @extend .card-text;
+            font-weight: bold;
+        }
+
+        .btn-carrito:hover {
+            background-color: $color-rosado;
+            border-color: $color-rosado;
+            @extend .card-text;
+
+        }
+    }
+}
+
+//button carousel
+.carousel-control-prev-icon {
+    background-color: $color-violeta-claro;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.carousel-control-next-icon {
+    @extend .carousel-control-prev-icon;
+}
+
+/*carousel pages inicio principal*/
+.carousel {
+    margin: 1rem 10% 1rem 10%;
+
+    .img-banner {
+        width: 100%;
+        height: fit-content;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    p {
+        @include color($color-white-claro);
+    }
+}

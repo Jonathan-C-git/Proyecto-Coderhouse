@@ -1,0 +1,15 @@
+//variables font
+$font-principal:"Archivo Black", sans-serif;
+$font-secundario: "Libertinus Serif Display", system-ui;
+
+//colores
+$color-violeta: #6a00f4;
+$color-violeta-claro: #834ac5;
+$color-rosa-rgb: #ff007c;
+$color-primary-1: linear-gradient(90deg, $color-violeta, #4c045a);
+$color-primary-2: radial-gradient(circle, $color-violeta, $color-rosa-rgb);
+$color-text-title: rgb(72, 2, 129);
+$color-white: white;
+$color-white-claro: aliceblue;
+$color-footer: linear-gradient($color-violeta, $color-violeta-claro);
+$color-rosado: rgb(226, 43, 195);

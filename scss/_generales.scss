@@ -1,0 +1,36 @@
+/*background general*/
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: $color-primary-1;
+}
+
+h1 {
+    @include font($font-principal, $color-text-title);
+}
+
+h3 {
+    color: $color-white-claro;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-inline-start: 2rem;
+}
+
+li {
+    font-family: $font-secundario;
+}
+
+/*Titulo en las paginas*/
+.titlePage {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+
+    h2 {
+        @include font($font-secundario, $color-white);
+        font-size: 50px;
+    }
+}
+
+section {
+    margin: 20px;
+}

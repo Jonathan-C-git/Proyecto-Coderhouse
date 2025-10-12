@@ -1,0 +1,74 @@
+/*media query*/
+@media (max-width:768px) {
+
+    h3 {
+        font-size: 24px;
+    }
+
+    /*Titulo en las paginas*/
+    .titlePage {
+        padding: 10px 0px 10px 0px;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    section {
+        margin: 5px;
+    }
+
+    .containerGaleriaGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 200px);
+        gap: 5px;
+        width: 100%;
+        height: auto;
+        grid-template-areas:
+            "g1 g2"
+            "g1 g3"
+            "g8 g3"
+            "g4 g4"
+            "g5 g9"
+            "g5 g6"
+            "g7 g6"
+            "g7 g10";
+    }
+
+    /*card en el carousel*/
+    .card-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel {
+        margin: 1rem 0 1rem 0;
+
+        .img-banner {
+            border-radius: 0;
+        }
+    }
+
+    /*formulario contacto*/
+    .formulario-contacto div {
+        width: 90%;
+    }
+
+    .button-contacto {
+        width: 25%;
+    }
+
+    .redes-social i {
+        font-size: 1rem;
+    }
+
+    .container-terminos-condicion {
+        max-width: 90%;
+    }
+
+    /*footer*/
+    footer {
+        @include flex-activador(flex, column);
+    }
+}

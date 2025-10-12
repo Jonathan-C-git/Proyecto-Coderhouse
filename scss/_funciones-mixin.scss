@@ -1,0 +1,22 @@
+
+@mixin font ($fuente, $color)
+{
+    font-family: $fuente;
+    @include color($color);
+}
+
+@mixin color  ($color)
+{
+  color: $color;
+}
+
+//flex
+@mixin flex-activador($dis, $dir){
+  display: $dis;
+  flex-direction: $dir;
+}
+@mixin flex-center($dis, $dir, $jc, $ai) {
+  @include flex-activador($dis, $dir);
+  justify-content: $jc;
+  align-items: $ai;
+}

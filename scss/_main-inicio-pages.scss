@@ -1,0 +1,47 @@
+/*Titulo principal con animation*/
+.title-principal {
+    @include font(fantasy, $color-white-claro);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/*section*/
+.margin-card {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+/*section de ubicacion*/
+.container {
+    h3 {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    div {
+        align-items: center;
+    }
+
+    .descripcion-ubicacion {
+        @include font($font-secundario, $color-white-claro);
+        text-align: center;
+    }
+}
+
+/*productos destacados title*/
+.titles-inicio {
+    @include flex-center(flex, row, space-between, center);
+    text-align: center;
+
+    .ver-mas {
+        padding-inline-end: 2rem;
+        @include color($color-white-claro);
+        font-size: 1.1rem;
+    }
+
+    .ver-mas:hover {
+        @include color($color-rosado);
+        font-weight: bold;
+    }
+}
