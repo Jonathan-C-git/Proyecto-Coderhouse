@@ -2,7 +2,10 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background: $color-primary-1;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, $color-violeta, $color-violeta-claro);
+    @include font($font-principal, $color-white);
 }
 
 h1 {

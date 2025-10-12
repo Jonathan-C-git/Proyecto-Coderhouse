@@ -2,7 +2,11 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(90deg, #6a00f4, #4c045a);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #6a00f4, #834ac5);
+  font-family: "Archivo Black", sans-serif;
+  color: white;
 }
 
 h1 {
@@ -38,6 +42,8 @@ section {
 
 header {
   background-image: radial-gradient(circle, #6a00f4, #ff007c);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
 }
 header .nav-item a:hover {
   font-style: oblique;
