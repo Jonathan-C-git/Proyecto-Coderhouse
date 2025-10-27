@@ -23,15 +23,15 @@
     }
 
     .button-contacto {
-        background-color: $color-violeta-claro;
+        background-color: $color-gris-claro;
         @include color($color-white-claro);
         border-radius: 1rem;
         width: 20%;
         min-height: 40px;
-        border-color: $color-rosa-rgb;
+        border-color: $color-dorado-rgb;
     }
 
     .button-contacto:hover {
-        background-color: #946ebe;
+        background-color: $color-dorado;
     }
 }

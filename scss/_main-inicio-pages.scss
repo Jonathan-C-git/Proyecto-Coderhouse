@@ -6,7 +6,11 @@
     margin-top: 2rem;
 }
 
-h1, h2, h3 {
+h1 {
+    @include font(fantasy, $color-white-claro);
+}
+
+h2, h3 {
   font-family: 'DM Serif Display', serif;
   color: #8C6239;
 }
@@ -46,7 +50,7 @@ h1, h2, h3 {
     }
 
     .ver-mas:hover {
-        @include color($color-rosado);
+        @include color($color-dorado);
         font-weight: bold;
     }
 }

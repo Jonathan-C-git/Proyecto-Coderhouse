@@ -11,6 +11,7 @@
         .card-title {
             @extend .card-text;
             font-weight: bold;
+            font-size: 1rem;
         }
 
         .card-text {
@@ -18,16 +19,15 @@
         }
 
         .btn-carrito {
-            background-color: $color-violeta;
-            border-color: $color-violeta;
+            background-color: $color-dorado;
+            border-color: $color-dorado;
             width: 80%;
             @extend .card-text;
             font-weight: bold;
         }
 
         .btn-carrito:hover {
-            background-color: $color-rosado;
-            border-color: $color-rosado;
+            background-color: $color-dorado-rgb;
             @extend .card-text;
 
         }
@@ -36,7 +36,7 @@
 
 //button carousel
 .carousel-control-prev-icon {
-    background-color: $color-violeta-claro;
+    background-color: $color-gris-claro;
     border-radius: 10px;
     padding: 10px;
 }

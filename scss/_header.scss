@@ -5,7 +5,7 @@ header {
 
     .nav-item a:hover {
         font-style: oblique;
-        @include color($color-text-title);
+        @include color($color-dorado);
         font-size: 18px;
     }
 

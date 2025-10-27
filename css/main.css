@@ -4,18 +4,18 @@ body {
   min-height: 100vh;
   transition: all 0.3s ease;
   box-sizing: border-box;
-  background: linear-gradient(135deg, #6a00f4, #834ac5);
+  background: linear-gradient(135deg, #1c1c1e, #2e2e32);
   font-family: "Archivo Black", sans-serif;
-  color: white;
+  color: #ffffff;
 }
 
 h1 {
   font-family: "Archivo Black", sans-serif;
-  color: rgb(72, 2, 129);
+  color: #f4f4f5;
 }
 
 h3 {
-  color: aliceblue;
+  color: #f7f7f8;
   font-weight: bolder;
   font-size: 2rem;
   margin-inline-start: 2rem;
@@ -32,7 +32,7 @@ li {
 }
 .titlePage h2 {
   font-family: "Libertinus Serif Display", system-ui;
-  color: white;
+  color: #ffffff;
   font-size: 50px;
 }
 
@@ -41,21 +41,21 @@ section {
 }
 
 header {
-  background-image: radial-gradient(circle, #6a00f4, #ff007c);
+  background-image: radial-gradient(circle, #2e2e32, #e89b3d);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
 }
 header .nav-item a:hover {
   font-style: oblique;
-  color: rgb(72, 2, 129);
+  color: #d4af37;
   font-size: 18px;
 }
 header .liActivado {
   font-family: "Archivo Black", sans-serif;
-  color: white;
+  color: #ffffff;
 }
 header .text-color {
-  color: white;
+  color: #ffffff;
 }
 
 /*footer con implementacion flex*/
@@ -65,8 +65,13 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  background: linear-gradient(#6a00f4, #834ac5);
+  background: linear-gradient(#2e2e32, #1c1c1e);
   padding: 20px;
+}
+footer .footer-class {
+  font-family: "Archivo Black", sans-serif;
+  color: #f4f4f5;
+  font-size: 2rem;
 }
 footer .patrocinadores {
   display: flex;
@@ -78,7 +83,7 @@ footer .patrocinadores {
 footer .patrocinadores p {
   text-align: center;
   margin-top: 10px;
-  color: aliceblue;
+  color: #f7f7f8;
   font-weight: bold;
   font-size: 1.3rem;
 }
@@ -103,10 +108,10 @@ footer .preguntas-termino {
   flex-direction: column;
 }
 footer .preguntas-termino a {
-  color: aliceblue;
+  color: #f7f7f8;
 }
 footer .preguntas-termino a:hover {
-  color: rgb(72, 2, 129);
+  color: #e89b3d;
 }
 
 /*cards de carousel general*/
@@ -117,28 +122,28 @@ footer .preguntas-termino a:hover {
   gap: 1rem;
 }
 .card-flex .card {
-  background: radial-gradient(circle, #6a00f4, #ff007c);
+  background: radial-gradient(circle, #2e2e32, #e89b3d);
   width: 18rem;
 }
 .card-flex .card .card-title {
   font-weight: bold;
+  font-size: 1rem;
 }
 .card-flex .card .card-text, .card-flex .card .btn-carrito:hover, .card-flex .card .btn-carrito, .card-flex .card .card-title {
-  color: aliceblue;
+  color: #f7f7f8;
 }
 .card-flex .card .btn-carrito {
-  background-color: #6a00f4;
-  border-color: #6a00f4;
+  background-color: #d4af37;
+  border-color: #d4af37;
   width: 80%;
   font-weight: bold;
 }
 .card-flex .card .btn-carrito:hover {
-  background-color: rgb(226, 43, 195);
-  border-color: rgb(226, 43, 195);
+  background-color: #e89b3d;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  background-color: #834ac5;
+  background-color: #2e2e32;
   border-radius: 10px;
   padding: 10px;
 }
@@ -154,19 +159,24 @@ footer .preguntas-termino a:hover {
   border-radius: 10px;
 }
 .carousel p {
-  color: aliceblue;
+  color: #f7f7f8;
 }
 
 /*Titulo principal con animation*/
 .title-principal {
   font-family: fantasy;
-  color: aliceblue;
+  color: #f7f7f8;
   font-size: 2rem;
   text-align: center;
   margin-top: 2rem;
 }
 
-h1, h2, h3 {
+h1 {
+  font-family: fantasy;
+  color: #f7f7f8;
+}
+
+h2, h3 {
   font-family: "DM Serif Display", serif;
   color: #8C6239;
 }
@@ -187,7 +197,7 @@ h1, h2, h3 {
 }
 .container .descripcion-ubicacion {
   font-family: "Libertinus Serif Display", system-ui;
-  color: aliceblue;
+  color: #f7f7f8;
   text-align: center;
 }
 
@@ -201,11 +211,11 @@ h1, h2, h3 {
 }
 .titles-inicio .ver-mas {
   padding-inline-end: 2rem;
-  color: aliceblue;
+  color: #f7f7f8;
   font-size: 1.1rem;
 }
 .titles-inicio .ver-mas:hover {
-  color: rgb(226, 43, 195);
+  color: #d4af37;
   font-weight: bold;
 }
 
@@ -290,21 +300,21 @@ h1, h2, h3 {
   width: 80%;
 }
 .formulario-contacto .button-contacto {
-  background-color: #834ac5;
-  color: aliceblue;
+  background-color: #2e2e32;
+  color: #f7f7f8;
   border-radius: 1rem;
   width: 20%;
   min-height: 40px;
-  border-color: #ff007c;
+  border-color: #e89b3d;
 }
 .formulario-contacto .button-contacto:hover {
-  background-color: #946ebe;
+  background-color: #d4af37;
 }
 
 /*preguntas frecuentes*/
 .accordion-p-f {
   font-family: "Libertinus Serif Display", system-ui;
-  background: linear-gradient(#834ac5, #6a00f4);
+  background: radial-gradient(circle, #2e2e32, #e89b3d);
   margin: 15px 10px 15px 10px;
   padding: 8px;
   border-radius: 5px;
@@ -315,7 +325,7 @@ h1, h2, h3 {
 }
 .accordion-p-f .respuesta-p-f {
   margin: 5px;
-  color: aliceblue;
+  color: #f7f7f8;
 }
 
 /*terminos y condiciones*/
@@ -323,7 +333,7 @@ h1, h2, h3 {
   max-width: 80%;
   margin: 1rem;
   padding: 20px;
-  color: aliceblue;
+  color: #f7f7f8;
 }
 .container-terminos-condicion li {
   margin-top: 1rem;

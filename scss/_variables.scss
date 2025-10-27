@@ -3,13 +3,13 @@ $font-principal:"Archivo Black", sans-serif;
 $font-secundario: "Libertinus Serif Display", system-ui;
 
 //colores
-$color-violeta: #6a00f4;
-$color-violeta-claro: #834ac5;
-$color-rosa-rgb: #ff007c;
-$color-primary-1: linear-gradient(90deg, $color-violeta, #4c045a);
-$color-primary-2: radial-gradient(circle, $color-violeta, $color-rosa-rgb);
-$color-text-title: rgb(72, 2, 129);
-$color-white: white;
-$color-white-claro: aliceblue;
-$color-footer: linear-gradient($color-violeta, $color-violeta-claro);
-$color-rosado: rgb(226, 43, 195);
+$color-gris: #1c1c1e;
+$color-gris-claro: #2e2e32;
+$color-dorado-rgb: #e89b3d;
+$color-primary-1: linear-gradient(90deg, #1c1c1e, #2e2e32);
+$color-primary-2: radial-gradient(circle, #2e2e32, #e89b3d);
+$color-text-title: #f4f4f5;
+$color-white: #ffffff;
+$color-white-claro: #f7f7f8;
+$color-footer: linear-gradient(#2e2e32, #1c1c1e);
+$color-dorado: #d4af37;

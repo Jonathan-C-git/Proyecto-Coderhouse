@@ -5,6 +5,11 @@ footer {
     background: $color-footer;
     padding: 20px;
 
+    .footer-class {
+        @include font($font-principal, $color-text-title);
+        font-size: 2rem;
+    }
+
     .patrocinadores {
         @include flex-center(flex, column, space-between, center);
         justify-items: center;
@@ -44,7 +49,7 @@ footer {
         }
 
         a:hover {
-            @include color($color-text-title);
+            @include color($color-dorado-rgb);
         }
     }
 }
